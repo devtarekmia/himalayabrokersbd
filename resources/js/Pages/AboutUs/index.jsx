@@ -1,26 +1,34 @@
 import React from 'react';
 import useToggle from '../../Hooks/useToggle';
 import BackToTop from '../BackToTop';
-import SignupHomeEight from '../HomeEight/SignupHomeEight';
 import FooterHomeOne from '../HomeOne/FooterHomeOne';
-import SponserHomeTwo from '../HomeTwo/SponserHomeTwo';
 import Drawer from '../Mobile/Drawer';
-import HeaderAbout from './HeaderAbout';
 import HeroAbout from './HeroAbout';
-import ServicesAbout from './ServicesAbout';
 import TeamAbout from './TeamAbout';
+import { Head } from '@inertiajs/react';
+import HeaderNews from '../News/HeaderNews';
+import HeroNews from '../News/HeroNews';
+import ServicesAbout from './ServicesAbout';
+import ServicesHomeTwo from '../HomeTwo/ServicesHomeTwo';
 
 function AboutUs() {
     const [drawer, drawerAction] = useToggle(false);
     return (
         <>
+            <Head title='About' />
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderAbout drawer={drawer} action={drawerAction.toggle} />
+            <HeaderNews drawer={drawer} action={drawerAction.toggle} />
+            <HeroNews
+                title="About Us"
+                breadcrumb={[
+                    { link: '/', title: 'Home' },
+                    { link: '/about-us', title: 'About' },
+                ]}
+            />
             <HeroAbout />
+            <ServicesHomeTwo />
             <ServicesAbout />
             <TeamAbout />
-            <SponserHomeTwo />
-            <SignupHomeEight />
             <FooterHomeOne className="appie-footer-about-area" />
             <BackToTop />
         </>

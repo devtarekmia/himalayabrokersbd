@@ -6,11 +6,13 @@ import Drawer from '../Mobile/Drawer';
 import HeaderNews from '../News/HeaderNews';
 import HeroNews from '../News/HeroNews';
 import Forms from './Forms';
+import { Head } from '@inertiajs/react';
 
 function Contact() {
     const [drawer, drawerAction] = useToggle(false);
     return (
         <>
+            <Head title='Contact' />
             <Drawer drawer={drawer} action={drawerAction.toggle} />
             <HeaderNews drawer={drawer} action={drawerAction.toggle} />
             <HeroNews

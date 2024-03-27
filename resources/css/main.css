@@ -14,6 +14,8 @@
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
@@ -29,7 +31,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; <-- while using this, the inertia scroll-reset on route visit feeling unhappy.*/
 }
 
 img {
@@ -233,9 +235,9 @@ p {
 }
 
 .appie-section-title .main-btn:hover {
-    background: #ff3e66;
+    background: #31c369;
     color: #fff;
-    border-color: #ff3e66;
+    border-color: #31c369;
 }
 
 .appie-section-title.appie-section-title-2 .appie-title {
@@ -1554,7 +1556,7 @@ p {
 }
 
 .appie-hero-area.appie-hero-3-area .appie-hero-content .appie-title {
-    color: #fff;
+    /* color: #fff; */
     font-size: 70px;
     line-height: 80px;
     padding: 0 80px;
@@ -1591,8 +1593,8 @@ p {
 }
 
 .appie-hero-area.appie-hero-3-area .appie-hero-content p {
-    color: #fff;
-    opacity: 0.5;
+    /* color: #fff; */
+    opacity: 0.6;
     font-size: 18px;
     line-height: 28px;
 }
@@ -1724,12 +1726,12 @@ p {
 }
 
 .appie-hero-area.appie-hero-3-area.appie-hero-5-area .appie-hero-content .hero-btns .main-btn {
-    border-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    border-color: #31c369;
+    color: #31c369;
 }
 
 .appie-hero-area.appie-hero-3-area.appie-hero-5-area .appie-hero-content .hero-btns .main-btn:hover {
-    background: #f84a6e;
+    background: #31c369;
     color: #fff;
 }
 
@@ -2610,20 +2612,21 @@ p {
     transform: translateY(-15px);
 }
 
+
 .appie-single-service.item-2 .icon {
-    background: linear-gradient(135deg, #f7b8af 0%, #f8452d 100%);
-}
-
-.appie-single-service.item-2 .icon span {
-    background: #f8452d;
-}
-
-.appie-single-service.item-3 .icon {
     background: linear-gradient(135deg, #a0eac2 0%, #31c369 100%);
 }
 
-.appie-single-service.item-3 .icon span {
+.appie-single-service.item-2 .icon span {
     background: #31c369;
+}
+
+.appie-single-service.item-3 .icon {
+    background: linear-gradient(135deg, #f7b8af 0%, #352f2e 100%);
+}
+
+.appie-single-service.item-3 .icon span {
+    background: #f8452d;
 }
 
 .appie-single-service.item-4 .icon {
@@ -6405,7 +6408,7 @@ blockquote cite {
 }
 
 .appie-error-area {
-    padding-top: 250px;
+    /* padding-top: 250px; */
 }
 
 .appie-error-content span {
@@ -6413,7 +6416,7 @@ blockquote cite {
     font-size: 50px;
     color: #db0f30;
     font-weight: 800;
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .appie-error-content .title {
@@ -6917,7 +6920,7 @@ blockquote cite {
     bottom: 8px;
     width: 100%;
     height: 20px;
-    background: #ff6e85;
+    background: #31c369;
     z-index: -1;
 }
 
@@ -7277,9 +7280,9 @@ blockquote cite {
 }
 
 .appie-video-player-slider .slick-arrow:hover {
-    background: #ff3e66;
+    background: #31c369;
     color: #fff;
-    border-color: #ff3e66;
+    border-color: #31c369;
 }
 
 .appie-video-player-slider .slick-arrow.prev {
@@ -9064,5 +9067,12 @@ blockquote cite {
 .shop-related-product-slider-active .slick-dots li.slick-active button {
     background: #31c369;
 }
+
+.leckerli-one-regular {
+    font-family: "Leckerli One", cursive !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /*# sourceMappingURL=style.css.map */

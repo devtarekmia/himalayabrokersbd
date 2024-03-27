@@ -26,6 +26,12 @@ function Navigation() {
                         <li>
                             <Link href="/catalogue">Catalogue</Link>
                         </li>
+                        <li>
+                            <Link href="/sale-reports">Auction Prices</Link>
+                        </li>
+                        <li>
+                            <Link href="/statistics">Statistics</Link>
+                        </li>
                     </ul>
                 </li>
                 <li>

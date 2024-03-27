@@ -9,7 +9,7 @@ function HeroService() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="appie-page-title-item">
-                                <span>Fast Development</span>
+                                <span>Our Services</span>
                                 <h3 className="title">
                                     Simple but effective, <br /> effortless yet powerful.
                                 </h3>

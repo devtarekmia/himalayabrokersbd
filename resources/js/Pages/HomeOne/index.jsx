@@ -4,30 +4,30 @@ import BackToTop from '../BackToTop';
 import Drawer from '../Mobile/Drawer';
 import BlogHomeOne from './BlogHomeOne';
 import FaqHomeOne from './FaqHomeOne';
-import FeaturesHomeOne from './FeaturesHomeOne';
 import FooterHomeOne from './FooterHomeOne';
-import HeroHomeOne from './HeroHomeOne';
 import HomeOneHeader from './HomeOneHeader';
-import PricingHomeOne from './PricingHomeOne';
 import ProjectHomeOne from './ProjectHomeOne';
 import ServicesHomeOne from './ServicesHomeOne';
 import TeamHomeOne from './TeamHomeOne';
 import TestimonialHomeOne from './TestimonialHomeOne';
-import TrafficHomeOne from './TrafficHomeOne';
+import ServicesHomeEight from '../HomeEight/ServicesHomeEight';
+import AboutHomeEight from '../HomeEight/AboutHomeEight';
+import WorkPartHomeEight from '../HomeEight/WorkPartHomeEight';
+import HeroHomeFour from '../HomeFour/HeroHomeFour';
 
 function HomeOne(props) {
     const [drawer, drawerAction] = useToggle(false);
     return (
-        <>
+        < >
             <Drawer drawer={drawer} action={drawerAction.toggle} />
             <HomeOneHeader action={drawerAction.toggle} canLogin={props.canLogin} auth={props.auth} />
-            <HeroHomeOne />
+            <HeroHomeFour />
             <ServicesHomeOne />
-            <FeaturesHomeOne />
-            <TrafficHomeOne />
+            <AboutHomeEight current_sale_prices={props.current_sale_prices} />
+            <ServicesHomeEight />
+            <WorkPartHomeEight />
             <TestimonialHomeOne />
             <TeamHomeOne />
-            <PricingHomeOne />
             <FaqHomeOne faqs={props.faqs} />
             <BlogHomeOne />
             <ProjectHomeOne />

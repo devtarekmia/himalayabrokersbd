@@ -8,7 +8,7 @@ function FaqHomeOne({ className, faqs }) {
 
     return (
         <>
-            <section className={`appie-faq-area pb-95 ${className || ''}`}>
+            <section className={`appie-faq-area pt-90 pb-95 ${className || ''}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">

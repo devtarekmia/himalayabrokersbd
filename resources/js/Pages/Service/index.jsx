@@ -6,8 +6,9 @@ import FooterHomeOne from '../HomeOne/FooterHomeOne';
 import ProjectHomeOne from '../HomeOne/ProjectHomeOne';
 import Drawer from '../Mobile/Drawer';
 import DetailsService from './DetailsService';
-import HeaderService from './HeaderService';
-import HeroService from './HeroService';
+import { Head } from '@inertiajs/react';
+import HeroNews from '../News/HeroNews';
+import HeaderNews from '../News/HeaderNews';
 
 function Service() {
     useEffect(() => {
@@ -16,9 +17,16 @@ function Service() {
     const [drawer, drawerAction] = useToggle(false);
     return (
         <>
+            <Head title='Service' />
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderService action={drawerAction.toggle} />
-            <HeroService />
+            <HeaderNews drawer={drawer} action={drawerAction.toggle} />
+            <HeroNews
+                title="Our Services"
+                breadcrumb={[
+                    { link: '/', title: 'Home' },
+                    { link: '/service', title: 'Service' },
+                ]}
+            />
             <DetailsService />
             <ProjectHomeOne />
             <FooterHomeOne />

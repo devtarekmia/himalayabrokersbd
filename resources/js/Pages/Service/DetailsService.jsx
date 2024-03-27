@@ -12,19 +12,19 @@ function DetailsService() {
                                 <div className="service-category-widget">
                                     <ul>
                                         <li>
-                                            <i className="fal fa-home"></i>Fast Development
+                                            <i className="fal fa-home"></i>Tea Brokers & Auctioneers
                                         </li>
                                         <li>
-                                            <i className="fal fa-tag"></i>App, UX
+                                            <i className="fal fa-badge-check"></i>Tea Tasting
                                         </li>
                                         <li>
-                                            <i className="fal fa-user-friends"></i>20-30 Employees
+                                            <i className="fal fa-forklift"></i>Storage & Logistics
                                         </li>
                                         <li>
-                                            <i className="fal fa-bookmark"></i>Appie Template
+                                            <i className="fal fa-globe-asia"></i>Business Networking
                                         </li>
                                         <li>
-                                            <i className="fal fa-globe"></i>quomodosoft.com/appie
+                                            <i className="fal fa-industry"></i>Financial Assistance
                                         </li>
                                     </ul>
                                 </div>
@@ -48,38 +48,31 @@ function DetailsService() {
                                     <img src={thumb} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h3 className="title">What we're Building</h3>
+                                    <h3 className="title">Tea Brokers & Auctioneers</h3>
                                     <p>
-                                        Tomfoolery wind up blag me old mucker chap super ruddy
-                                        chancer bobby, vagabond it's your round cuppa cheesed off
-                                        blower nice one at public school, Why cockup knackered pear
-                                        shaped amongst spiffing good time he nicked it.
+                                        Tea broking in Panchagarh has developed over its long history from a pure marketing role to a multi faceted range of services covering not only marketing but warehousing, finance, technical advisory service and the macro aspects of the global tea industry. Consequently, a number of integrated businesses and professional expertise for these different areas of operation are required in a tea broking company. Eastern Brokers have lost no time in staying abreast with these developing trends and will continue to do so in the future. Proud of yesterday we build for tomorrow.
+                                    </p>
+                                </div>
+                                <div className="content">
+                                    <h3 className="title">Tea Tasting</h3>
+                                    <p>
+                                        Our team is comprised of competent Tea Tasters – a young and dynamic team who were all trained by the most Senior Tea Broker and veteran in the trade, who spared no effort in doing so.
                                     </p>
                                     <span>
-                                        He lost his bottle mufty spend a penny cheeky at public
-                                        school daft get stuffed mate don't get shirty.
+                                        It is the Taster who describes and values tea and so fulfills the highly specialized responsibility in its marketing aspects.
                                     </span>
                                     <p>
-                                        My good sir cup of char no biggie knees up happy days
-                                        absolutely bladdered don't get shirty with me chimney pot
-                                        James Bond he lost his bottle me old mucker, bobby nice one
-                                        cack codswallop what a load of rubbish Jeffrey barmy blower
-                                        tomfoolery, crikey only a quid at public school mufty tosser
-                                        up the duff say Richard I don't want no agro. Owt to do with
-                                        me barney quaint jolly good off his nut vagabond pardon you
-                                        gutted mate the little rotter excuse my French, the bee's
-                                        knees don't get shirty with me he nicked it give us a bell
-                                        zonked lavatory Charles gosh, Eaton the BBC is victoria
-                                        sponge a William bog what a load of rubbish. Smashing only a
-                                        quid cockup he lost his bottle bugger Jeffrey mufty,
-                                        starkers blatant zonked easy peasy brolly car boot, blimey
-                                        at public school cheeky bugger you mug david. Tomfoolery a
-                                        load of old tosh Queen's English lemon squeezy old
-                                        hunky-dory mush chap give us a bell bloke, chancer knackered
-                                        cheesed off buggered tinkety tonk old fruit car boot only a
-                                        quid spiffing good time chinwag, he lost his bottle pukka
-                                        gutted mate naff horse play cup of tea baking cakes a
-                                        blinding shot. bobby the wireless matie boy show.
+                                        His description of the liquor is based on taste. Smell and taste are part of the same interconnected sensory system, and "flavor" is almost entirely sensed in the nose. A Taster may deal with several hundred tea samples in a day and mastering this highly complex skill is an accomplishment our team can proudly boast of. In making his evaluation, he brings his knowledge and experience to bear on the performance of a particular estate and mark and to this extent one can be assured of our high competency levels.
+                                    </p>
+                                </div>
+                                <div className="content">
+                                    <h3 className="title">Storage & Logistics</h3>
+                                    <p>
+                                        Our Warehouse is securely located in Panchagarh and has easy access from the main Panchagarh-Tetulia main road. It currently has a capacity of 22,000 sq ft.
+                                    </p>
+                                    <br />
+                                    <p>
+                                        The complex is managed and supervised by a Team of customer oriented and experienced Staff at site. The facility is approved by the Bangladesh Tea Board and the Tea Traders’ Association and is in strict compliance with Industry standards.
                                     </p>
                                 </div>
                             </div>

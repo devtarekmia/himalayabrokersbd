@@ -2,11 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Message;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
-use function Pest\Laravel\call;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,8 +20,12 @@ class DatabaseSeeder extends Seeder
             'email' => 'tarek@hbl.com',
         ]);
 
+        Message::factory(10);
+
         $this->call([
-            FaqSeeder::class
+            FaqSeeder::class,
+            AuctionScheduleSeeder::class,
+            TopPriceSeeder::class,
         ]);
     }
 }

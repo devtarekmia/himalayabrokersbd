@@ -1,7 +1,23 @@
 import React from 'react';
+import { useForm, usePage } from '@inertiajs/react'
 import projectThumb from '@images/project-thumb.png';
 
 function ProjectHomeOne() {
+    const { data, setData, post, processing, errors, reset } = useForm({
+        email: "",
+    });
+
+    function submit(e) {
+        e.preventDefault()
+        post('/newsletter', {
+            preserveScroll: true,
+            onSuccess: () => {
+                reset();
+            },
+        })
+    }
+
+    const { message } = usePage().props.flash;
     return (
         <>
             <section className="appie-project-area pb-100">
@@ -20,12 +36,21 @@ function ProjectHomeOne() {
                                                 Subscribe for our newsletter.
                                             </h3>
                                             <p>Subscribe to get the latest news on teas, and monthly specials.</p>
-                                            <form action="#">
-                                                <div className="input-box mt-30">
-                                                    <input type="text" placeholder="Your email" />
-                                                    <button type="button">Subscribe</button>
+
+                                            {message && <div className=" mt-30">
+                                                <div className='alert bg-white' style={{ color: "#31c369" }}>
+                                                    {message.body}
                                                 </div>
-                                            </form>
+                                            </div>}
+
+                                            {!message &&
+                                                <form onSubmit={submit}>
+                                                    <div className="input-box mt-30">
+                                                        <input type="email" placeholder="Your email" id="email" value={data.email} onChange={e => setData('email', e.target.value)} />
+                                                        <button type="submit">Subscribe</button>
+                                                    </div>
+                                                    {errors.email && <small style={{ color: "red" }}>{errors.email}</small>}
+                                                </form>}
                                         </div>
                                     </div>
                                 </div>

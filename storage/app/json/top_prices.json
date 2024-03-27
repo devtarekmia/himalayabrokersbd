@@ -1,0 +1,275 @@
+[
+    {
+        "sale_no": "1",
+        "tea_type": "brokens",
+        "mark": "SUPREME TEA",
+        "grade": "GBOP(S)(C)",
+        "price": "158"
+    },
+    {
+        "sale_no": "1",
+        "tea_type": "fannings",
+        "mark": "SUPREME TEA",
+        "grade": "OF(C)",
+        "price": "152"
+    },
+    {
+        "sale_no": "1",
+        "tea_type": "dust",
+        "mark": "BISMILLAH TEA",
+        "grade": "CD(C)",
+        "price": "150"
+    },
+    {
+        "sale_no": "2",
+        "tea_type": "brokens",
+        "mark": "MM TEA ESTATE",
+        "grade": "GBOP(C)",
+        "price": "196"
+    },
+    {
+        "sale_no": "2",
+        "tea_type": "fannings",
+        "mark": "MM TEA ESTATE",
+        "grade": "OF(C)",
+        "price": "200"
+    },
+    {
+        "sale_no": "2",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA",
+        "grade": "CD(S)(C)",
+        "price": "161"
+    },
+    {
+        "sale_no": "3",
+        "tea_type": "brokens",
+        "mark": "MORGEN TEA",
+        "grade": "GBOP(C)",
+        "price": "120"
+    },
+    {
+        "sale_no": "3",
+        "tea_type": "fannings",
+        "mark": "MORGEN TEA",
+        "grade": "OF(C)",
+        "price": "123"
+    },
+    {
+        "sale_no": "3",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA",
+        "grade": "CD(C)",
+        "price": "172"
+    },
+    {
+        "sale_no": "4",
+        "tea_type": "brokens",
+        "mark": "KBSSL TEA",
+        "grade": "GBOP(C)",
+        "price": "175"
+    },
+    {
+        "sale_no": "4",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "PF(C)",
+        "price": "185"
+    },
+    {
+        "sale_no": "4",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA",
+        "grade": "CD(C)",
+        "price": "172"
+    },
+    {
+        "sale_no": "5",
+        "tea_type": "brokens",
+        "mark": "KBSSL TEA",
+        "grade": "GBOP(C) BT-2",
+        "price": "162"
+    },
+    {
+        "sale_no": "5",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "GOF(C) BT-2",
+        "price": "164"
+    },
+    {
+        "sale_no": "5",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "CD(C) Special",
+        "price": "172"
+    },
+    {
+        "sale_no": "6",
+        "tea_type": "brokens",
+        "mark": "KBSSL TEA",
+        "grade": "GBOP(C)",
+        "price": "150"
+    },
+    {
+        "sale_no": "6",
+        "tea_type": "fannings",
+        "mark": "GREEN FIELD TEA",
+        "grade": "PF(C)",
+        "price": "148"
+    },
+    {
+        "sale_no": "6",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "CD(C) Special",
+        "price": "166"
+    },
+    {
+        "sale_no": "7",
+        "tea_type": "brokens",
+        "mark": "KBSSL TEA",
+        "grade": "GBOP(C)",
+        "price": "140"
+    },
+    {
+        "sale_no": "7",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "PF(C)",
+        "price": "142"
+    },
+    {
+        "sale_no": "7",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA",
+        "grade": "DUST(C)",
+        "price": "148"
+    },
+    {
+        "sale_no": "8",
+        "tea_type": "brokens",
+        "mark": "GREEN FIELD TEA",
+        "grade": "GBOP(S)(C)",
+        "price": "145"
+    },
+    {
+        "sale_no": "8",
+        "tea_type": "fannings",
+        "mark": "GREEN FIELD TEA",
+        "grade": "PF(C)",
+        "price": "145"
+    },
+    {
+        "sale_no": "8",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA",
+        "grade": "CD(C)",
+        "price": "142"
+    },
+    {
+        "sale_no": "9",
+        "tea_type": "brokens",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "GBOP(C) Special",
+        "price": "146"
+    },
+    {
+        "sale_no": "9",
+        "tea_type": "fannings",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "GOF(C) Special",
+        "price": "146"
+    },
+    {
+        "sale_no": "9",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA",
+        "grade": "CD(C)",
+        "price": "138"
+    },
+    {
+        "sale_no": "10",
+        "tea_type": "brokens",
+        "mark": "KBSSL TEA",
+        "grade": "GBOP(C)",
+        "price": "139"
+    },
+    {
+        "sale_no": "10",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "GOF(C)",
+        "price": "139"
+    },
+    {
+        "sale_no": "10",
+        "tea_type": "dust",
+        "mark": "NAHEED TEA",
+        "grade": "DUST(C)",
+        "price": "80"
+    },
+    {
+        "sale_no": "11",
+        "tea_type": "brokens",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "BOP(S)(C) Special",
+        "price": "130"
+    },
+    {
+        "sale_no": "11",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "PF(C)",
+        "price": "147"
+    },
+    {
+        "sale_no": "11",
+        "tea_type": "dust",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "CD(C) Special",
+        "price": "130"
+    },
+    {
+        "sale_no": "12",
+        "tea_type": "brokens",
+        "mark": "MORGEN TEA SPECIAL",
+        "grade": "BOP(S)(C) Special",
+        "price": "130"
+    },
+    {
+        "sale_no": "12",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "GOF(C)",
+        "price": "138"
+    },
+    {
+        "sale_no": "12",
+        "tea_type": "dust",
+        "mark": "KBSSL TEA",
+        "grade": "PD(C)",
+        "price": "138"
+    },
+    {
+        "sale_no": "13",
+        "tea_type": "brokens",
+        "mark": "KBSSL TEA",
+        "grade": "BOP(C)",
+        "price": "125"
+    },
+    {
+        "sale_no": "13",
+        "tea_type": "fannings",
+        "mark": "KBSSL TEA",
+        "grade": "OF(C)",
+        "price": "125"
+    },
+    {
+        "sale_no": "13",
+        "tea_type": "dust",
+        "mark": "POPULAR TEA",
+        "grade": "CD(C)",
+        "price": "90"
+    }
+]

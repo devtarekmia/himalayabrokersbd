@@ -12,15 +12,15 @@ function TeamHomeOne() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="appie-section-title text-center">
-                                <h3 className="appie-title">Meet our Team Members</h3>
-                                <p>Different layouts and styles for team sections.</p>
+                                <h3 className="appie-title">Meet our Board of Directors</h3>
+                                <p>Leadership, expertise, and dedication embodied by our esteemed Board of Directors.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row justify-center">
                         <div className="col-lg-3 col-md-6">
                             <div
-                                className="appie-team-item mt-30 wow animated fadeInUp"
+                                className="appie-team-item appie-team-item-about mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
                                 data-wow-delay="200ms"
                             >
@@ -29,129 +29,57 @@ function TeamHomeOne() {
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <i className="fab fa-facebook-f" />
+                                                <i className="fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="fab fa-twitter" />
+                                                <i className="fab fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="fab fa-pinterest-p" />
+                                                <i className="fab fa-twitter"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="content text-center">
-                                    <h5 className="title">Benjamin Evalent</h5>
-                                    <span>CEO-Founder</span>
+                                <div className="content text-left">
+                                    <h5 className="title">Harun-Or-Rashid</h5>
+                                    <span>Chairman</span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div
-                                className="appie-team-item mt-30 wow animated fadeInUp"
+                                className="appie-team-item appie-team-item-about mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
                                 data-wow-delay="400ms"
-                            >
-                                <div className="thumb">
-                                    <img src={teamTwo} alt="" />
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="content text-center">
-                                    <h5 className="title">Benjamin Evalent</h5>
-                                    <span>CEO-Founder</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div
-                                className="appie-team-item mt-30 wow animated fadeInUp"
-                                data-wow-duration="2000ms"
-                                data-wow-delay="600ms"
                             >
                                 <div className="thumb">
                                     <img src={teamThree} alt="" />
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <i className="fab fa-facebook-f" />
+                                                <i className="fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="fab fa-twitter" />
+                                                <i className="fab fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i className="fab fa-pinterest-p" />
+                                                <i className="fab fa-twitter"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="content text-center">
-                                    <h5 className="title">Benjamin Evalent</h5>
-                                    <span>CEO-Founder</span>
+                                <div className="content text-left">
+                                    <h5 className="title">Babul Akther</h5>
+                                    <span>Managing Director</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div
-                                className="appie-team-item mt-30 wow animated fadeInUp"
-                                data-wow-duration="2000ms"
-                                data-wow-delay="800ms"
-                            >
-                                <div className="thumb">
-                                    <img src={teamFour} alt="" />
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-facebook-f" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-pinterest-p" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="content text-center">
-                                    <h5 className="title">Benjamin Evalent</h5>
-                                    <span>CEO-Founder</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-12">
-                            <div className="team-btn text-center mt-50">
-                                <a className="main-btn" href="#">
-                                    {' '}
-                                    View all Members <i className="fal fa-arrow-right" />
-                                </a>
                             </div>
                         </div>
                     </div>

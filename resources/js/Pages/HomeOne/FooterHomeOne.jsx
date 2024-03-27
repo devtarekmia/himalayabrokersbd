@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '@images/logo.png';
 import { Link } from '@inertiajs/react';
 import { RiHeartLine } from '@/Components/RiHeartLine';
-import { FluentMdl2OpenInNewTab } from '@/Components/FluentMdl2OpenInNewTab';
+import { PepiconsPencilOpen } from '@/Components/Icons/PepiconsPencilOpen';
 
 function FooterHomeOne({ className }) {
     return (
@@ -20,9 +20,9 @@ function FooterHomeOne({ className }) {
                                 <p>
                                     HBL - Himalaya Brokers Limited is a Leading Tea Broker and Auctioneer located in Panchagarh, Bangladesh, the third tea auction center in the country.
                                 </p>
-                                <a href="#">
+                                <Link href="/about-us">
                                     Read More <i className="fal fa-arrow-right" />
-                                </a>
+                                </Link>
                                 <div className="social mt-30">
                                     <ul>
                                         <li>
@@ -57,7 +57,7 @@ function FooterHomeOne({ className }) {
                                         <Link href="/about-us">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="/Service">Service</Link>
+                                        <Link href="/service">Service</Link>
                                     </li>
                                     <li>
                                         <Link href="/schedule">Sale Programme</Link>
@@ -122,7 +122,7 @@ function FooterHomeOne({ className }) {
                             <div className="footer-copyright d-flex align-items-center justify-content-between pt-35">
                                 <div className="apps-download-btn">
                                     Made with <RiHeartLine /> by Tarek Mia
-                                    &nbsp;<a href="https://tarekmia.com" target='_blank'><FluentMdl2OpenInNewTab /></a>
+                                    &nbsp;<a href="https://tarekmia.com" target='_blank'><PepiconsPencilOpen /></a>
                                 </div>
                                 <div className="copyright-text">
                                     <p>Copyright © 2023 Himalaya Brokers Ltd. All rights reserved.</p>
