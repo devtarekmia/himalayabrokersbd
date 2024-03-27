@@ -28,7 +28,7 @@ function CatalogueList() {
                         data-wow-duration="2000ms"
                         data-wow-delay="200ms"
                     >
-                        <table className='table table-bordered'>
+                        <table className='table table-bordered table-responsive'>
                             <thead>
                                 <tr>
                                     <th>Sale No</th>

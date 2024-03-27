@@ -35,7 +35,7 @@ function TopPrices({ top_prices }) {
                     >
 
 
-                        <table className='table table-bordered'>
+                        <table className='table table-bordered table-responsive'>
                             <thead>
                                 <tr>
                                     <th>Sale No</th>
