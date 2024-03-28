@@ -16,9 +16,9 @@ return new class extends Migration
             $table->id();
             $table->string('season', 10);
             $table->unsignedSmallInteger('sale_no');
-            $table->timestamp('catalogue_closing');
-            $table->timestamp('sale_date');
-            $table->timestamp('prompt_date');
+            $table->timestamp('catalogue_closing')->nullable();
+            $table->timestamp('sale_date')->nullable();
+            $table->timestamp('prompt_date')->nullable();
             $table->string('remark')->nullable();
         });
     }
