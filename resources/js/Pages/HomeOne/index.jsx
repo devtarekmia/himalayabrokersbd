@@ -15,20 +15,20 @@ import AboutHomeEight from '../HomeEight/AboutHomeEight';
 import WorkPartHomeEight from '../HomeEight/WorkPartHomeEight';
 import HeroHomeFour from '../HomeFour/HeroHomeFour';
 
-function HomeOne(props) {
+function HomeOne() {
     const [drawer, drawerAction] = useToggle(false);
     return (
         < >
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HomeOneHeader action={drawerAction.toggle} canLogin={props.canLogin} auth={props.auth} />
+            <HomeOneHeader action={drawerAction.toggle} />
             <HeroHomeFour />
             <ServicesHomeOne />
-            <AboutHomeEight current_sale_prices={props.current_sale_prices} />
+            <AboutHomeEight />
             <ServicesHomeEight />
             <WorkPartHomeEight />
             <TestimonialHomeOne />
             <TeamHomeOne />
-            <FaqHomeOne faqs={props.faqs} />
+            <FaqHomeOne />
             <BlogHomeOne />
             <ProjectHomeOne />
             <FooterHomeOne />

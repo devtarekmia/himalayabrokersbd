@@ -1,0 +1,145 @@
+[
+    {
+        "sale_no": "1",
+        "offering_bags_leaf": "1241",
+        "offering_bags_dust": "155",
+        "offering_kgs_leaf": "61720",
+        "offering_kgs_dust": "7727.2",
+        "sold_bags_leaf": "1038",
+        "sold_bags_dust": "150",
+        "sold_kgs_leaf": "51630",
+        "sold_kgs_dust": "7478.2"
+    },
+    {
+        "sale_no": "2",
+        "offering_bags_leaf": "1780",
+        "offering_bags_dust": "185",
+        "offering_kgs_leaf": "88616",
+        "offering_kgs_dust": "9223.6",
+        "sold_bags_leaf": "1365",
+        "sold_bags_dust": "160",
+        "sold_kgs_leaf": "67956",
+        "sold_kgs_dust": "7977.6"
+    },
+    {
+        "sale_no": "3",
+        "offering_bags_leaf": "2088",
+        "offering_bags_dust": "245",
+        "offering_kgs_leaf": "104027.25",
+        "offering_kgs_dust": "12229.6",
+        "sold_bags_leaf": "1660",
+        "sold_bags_dust": "210",
+        "sold_kgs_leaf": "82715",
+        "sold_kgs_dust": "10482.4"
+    },
+    {
+        "sale_no": "4",
+        "offering_bags_leaf": "1840",
+        "offering_bags_dust": "200",
+        "offering_kgs_leaf": "91696.25",
+        "offering_kgs_dust": "9982",
+        "sold_bags_leaf": "945",
+        "sold_bags_dust": "165",
+        "sold_kgs_leaf": "47088.75",
+        "sold_kgs_dust": "8235.2"
+    },
+    {
+        "sale_no": "5",
+        "offering_bags_leaf": "1109",
+        "offering_bags_dust": "155",
+        "offering_kgs_leaf": "55259.5",
+        "offering_kgs_dust": "12030.4",
+        "sold_bags_leaf": "939",
+        "sold_bags_dust": "146",
+        "sold_kgs_leaf": "46794",
+        "sold_kgs_dust": "7288"
+    },
+    {
+        "sale_no": "6",
+        "offering_bags_leaf": "1830",
+        "offering_bags_dust": "195",
+        "offering_kgs_leaf": "91217.6",
+        "offering_kgs_dust": "9734",
+        "sold_bags_leaf": "905",
+        "sold_bags_dust": "110",
+        "sold_kgs_leaf": "45107.5",
+        "sold_kgs_dust": "5490.8"
+    },
+    {
+        "sale_no": "7",
+        "offering_bags_leaf": "1015",
+        "offering_bags_dust": "219",
+        "offering_kgs_leaf": "50588.75",
+        "offering_kgs_dust": "10932.4",
+        "sold_bags_leaf": "710",
+        "sold_bags_dust": "174",
+        "sold_kgs_leaf": "35384.5",
+        "sold_kgs_dust": "8686"
+    },
+    {
+        "sale_no": "8",
+        "offering_bags_leaf": "2010",
+        "offering_bags_dust": "210",
+        "offering_kgs_leaf": "100197",
+        "offering_kgs_dust": "10483.2",
+        "sold_bags_leaf": "1790",
+        "sold_bags_dust": "175",
+        "sold_kgs_leaf": "89230",
+        "sold_kgs_dust": "8736"
+    },
+    {
+        "sale_no": "9",
+        "offering_bags_leaf": "1466",
+        "offering_bags_dust": "185",
+        "offering_kgs_leaf": "73081",
+        "offering_kgs_dust": "9235.2",
+        "sold_bags_leaf": "651",
+        "sold_bags_dust": "104",
+        "sold_kgs_leaf": "32453.25",
+        "sold_kgs_dust": "5192"
+    },
+    {
+        "sale_no": "10",
+        "offering_bags_leaf": "910",
+        "offering_bags_dust": "45",
+        "offering_kgs_leaf": "45363.5",
+        "offering_kgs_dust": "2246.4",
+        "sold_bags_leaf": "400",
+        "sold_bags_dust": "10",
+        "sold_kgs_leaf": "19940",
+        "sold_kgs_dust": "499.2"
+    },
+    {
+        "sale_no": "11",
+        "offering_bags_leaf": "1125",
+        "offering_bags_dust": "91",
+        "offering_kgs_leaf": "56081.25",
+        "offering_kgs_dust": "4542.4",
+        "sold_bags_leaf": "715",
+        "sold_bags_dust": "61",
+        "sold_kgs_leaf": "35642.75",
+        "sold_kgs_dust": "3044.8"
+    },
+    {
+        "sale_no": "12",
+        "offering_bags_leaf": "590",
+        "offering_bags_dust": "35",
+        "offering_kgs_leaf": "29411.5",
+        "offering_kgs_dust": "1747.2",
+        "sold_bags_leaf": "315",
+        "sold_bags_dust": "35",
+        "sold_kgs_leaf": "15702.75",
+        "sold_kgs_dust": "1747.2"
+    },
+    {
+        "sale_no": "13",
+        "offering_bags_leaf": "410",
+        "offering_bags_dust": "30",
+        "offering_kgs_leaf": "20438.5",
+        "offering_kgs_dust": "1497.6",
+        "sold_bags_leaf": "360",
+        "sold_bags_dust": "30",
+        "sold_kgs_leaf": "17946",
+        "sold_kgs_dust": "1497.6"
+    }
+]

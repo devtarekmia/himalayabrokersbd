@@ -1,10 +1,9 @@
-import { getSeason } from '@/utils';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 import { format } from 'date-fns';
 import React from 'react';
 
-function SaleProgramme({ schedule }) {
-    const season = getSeason();
+function SaleProgramme() {
+    const { schedule, season } = usePage().props;
     return (
         <>
             <section className="contact-section">
@@ -36,7 +35,7 @@ function SaleProgramme({ schedule }) {
                     >
 
 
-                        <table className='table table-bordered table-responsive'>
+                        <table className='table table-bordered table-responsive-md text-nowrap'>
                             <thead>
                                 <tr>
                                     <th>Sale No</th>
@@ -57,7 +56,7 @@ function SaleProgramme({ schedule }) {
                                         <td>
                                             <span className={`badge ${row.status == 'current' ? 'badge-success' : (row.status == 'closed' ? 'badge-secondary' : 'badge-info')} badge-pill text-capitalize`}>{row.status}</span>
                                         </td>
-                                        <td className='text-sm text-start'>{row.remark}</td>
+                                        <td className='text-sm text-start text-wrap'>{row.remark}</td>
                                     </tr>
                                 ))}
 

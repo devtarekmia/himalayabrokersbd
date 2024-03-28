@@ -2,12 +2,15 @@ import React, { useEffect } from 'react';
 import logo from '@images/logo.png';
 import StickyMenu from '../../lib/StickyMenu';
 import Navigation from '../Navigation';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 
-function HomeOneHeader({ action, canLogin, auth }) {
+function HomeOneHeader({ action }) {
     useEffect(() => {
         StickyMenu();
     }, []);
+
+    const { canLogin, auth } = usePage().props;
+
     return (
         <header className="appie-header-area appie-sticky">
             <div className="container">

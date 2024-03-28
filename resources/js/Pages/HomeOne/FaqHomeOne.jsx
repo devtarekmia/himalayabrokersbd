@@ -1,6 +1,8 @@
+import { usePage } from '@inertiajs/react';
 import React, { useState } from 'react';
 
-function FaqHomeOne({ className, faqs }) {
+function FaqHomeOne({ className }) {
+    const { faqs } = usePage().props;
     const [showQues, setQues] = useState(0 + JSON.stringify(faqs[0][0]));
     const openQuestion = (value) => {
         setQues(value);

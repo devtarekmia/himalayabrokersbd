@@ -1,9 +1,30 @@
-import { getSeason } from '@/utils';
+import { usePage } from '@inertiajs/react';
 import React from 'react';
+import Chart from 'react-google-charts';
 
-function AboutHomeEight({ current_sale_prices }) {
-    const season = getSeason();
-    console.log(current_sale_prices)
+function AboutHomeEight() {
+    const { sale } = usePage().props
+    const current_sale = sale.data;
+    const { overview } = current_sale;
+
+    const leaf_offering = parseFloat(overview.offering_kgs_leaf);
+    const leaf_sold = parseFloat(overview.sold_kgs_leaf);
+    const dust_offering = parseFloat(overview.offering_kgs_dust);
+    const dust_sold = parseFloat(overview.sold_kgs_dust);
+
+    const leaf_data = [
+        ["Leaf", "Weight (kg)"],
+        ["Sold", leaf_sold],
+        ["Unsold", leaf_offering - leaf_sold],
+    ];
+
+    const dust_data = [
+        ["Dust", "Weight (kg)"],
+        ["Sold", dust_sold],
+        ["Unsold", dust_offering - dust_sold],
+    ]
+
+
     return (
         <>
             <section className="appie-about-8-area pt-100 pb-100">
@@ -32,19 +53,19 @@ function AboutHomeEight({ current_sale_prices }) {
                             <div className="col-md-4">
                                 <div className='mt-30 mt-md-0'>
                                     <p>Season</p>
-                                    <h4 className="appie-section-title-2 mt-2">{season}</h4>
+                                    <h4 className="appie-section-title-2 mt-2">{current_sale.season}</h4>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className='mt-30 mt-md-0'>
                                     <p>Sale No</p>
-                                    <h4 className="appie-section-title-2 mt-2">13</h4>
+                                    <h4 className="appie-section-title-2 mt-2">{current_sale.sale_no}</h4>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className='mt-30 mt-md-0'>
                                     <p>Sale Date</p>
-                                    <h4 className="appie-section-title-2 mt-2">March 20, 2024</h4>
+                                    <h4 className="appie-section-title-2 mt-2">{current_sale.sale_date}</h4>
                                 </div>
                             </div>
                         </div>
@@ -58,6 +79,7 @@ function AboutHomeEight({ current_sale_prices }) {
                                 <p>
                                     Relating to our catalouge only
                                 </p>
+
                                 <br /><br /><br />
                                 <table className='table'>
                                     <thead>
@@ -75,16 +97,16 @@ function AboutHomeEight({ current_sale_prices }) {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><div><p><strong>Brokens</strong></p></div></td>
-                                            <td><div><p>KBSSL TEA</p></div></td>
-                                            <td><div><p>125.00 </p></div></td>
-                                            <td><div><p>BOP(C) </p></div></td>
+                                            <td><p><strong>Brokens</strong></p></td>
+                                            <td><p>{current_sale.top_prices.brokens.mark}</p></td>
+                                            <td><p>{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'BDT' }).format(current_sale.top_prices.brokens.price)} </p></td>
+                                            <td><p>{current_sale.top_prices.brokens.grade} </p></td>
                                         </tr>
                                         <tr>
-                                            <td><div><p><strong>Fannings</strong></p></div></td>
-                                            <td><div><p>KBSSL TEA</p></div></td>
-                                            <td><div><p>125.00 </p></div></td>
-                                            <td><div><p>OF(C) </p></div></td>
+                                            <td><p><strong>Fannings</strong></p></td>
+                                            <td><p>{current_sale.top_prices.fannings.mark}</p></td>
+                                            <td><p>{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'BDT' }).format(current_sale.top_prices.fannings.price)} </p></td>
+                                            <td><p>{current_sale.top_prices.fannings.grade} </p></td>
                                         </tr>
                                         <tr>
                                             <td colSpan="4">
@@ -92,10 +114,10 @@ function AboutHomeEight({ current_sale_prices }) {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><div><p><strong>Dust</strong></p></div></td>
-                                            <td><div><p>POPULAR TEA</p></div></td>
-                                            <td><div><p>90.00 </p></div></td>
-                                            <td><div><p>CD(C) </p></div></td>
+                                            <td><p><strong>Dust</strong></p></td>
+                                            <td><p>{current_sale.top_prices.dust.mark}</p></td>
+                                            <td><p>{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'BDT' }).format(current_sale.top_prices.dust.price)} </p></td>
+                                            <td><p>{current_sale.top_prices.dust.grade} </p></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -103,44 +125,34 @@ function AboutHomeEight({ current_sale_prices }) {
                         </div>
                         <div className="col-lg-5">
                             <div className='appie-single-service appie-single-services-3 mt-30  wow  animated fadeInUp bg-white '>
+
                                 <h3 className="title">
-                                    Sale Insights
+                                    Sale Overview
                                 </h3>
                                 <p>
                                     Relating to our catalouge only
                                 </p>
-                                <br /><br /><br />
-                                <table className='table'>
-                                    <thead>
-                                        <tr>
-                                            <th>Offering</th>
-                                            <th>Sales</th>
-                                            <th>Ratio</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colSpan="3">
-                                                <h4 className='appie-title'>Leaf</h4>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><div><p>20,438.50 KGs</p></div></td>
-                                            <td><div><p>17,946.00 KGs </p></div></td>
-                                            <td><div><p>87.80% </p></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td colSpan="3">
-                                                <h4 className='appie-title'>Dust</h4>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><div><p>1,497.60 KGs</p></div></td>
-                                            <td><div><p>1,497.60 KGs </p></div></td>
-                                            <td><div><p>100% </p></div></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                                <div className='mt-35'>
+                                    <Chart
+                                        chartType="PieChart"
+                                        data={leaf_data}
+                                        options={{
+                                            title: 'LEAF', chartArea: { left: 15, top: 15, right: 15, bottom: 15 }
+                                        }}
+                                        width={"100%"}
+                                    />
+                                </div>
+                                <div className='mt-30'>
+                                    <Chart
+                                        chartType="PieChart"
+                                        data={dust_data}
+                                        options={{
+                                            title: 'DUST', chartArea: { left: 15, top: 15, right: 15, bottom: 15 }
+                                        }}
+                                        width={"100%"}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -131,6 +131,9 @@ function Drawer({ drawer, action }) {
                                             <a href="tel:+8801710035629">
                                                 <i className="fal fa-phone"></i>  +(880) 1710 035629
                                             </a>
+                                            <a href="tel:+8801733145359">
+                                                <i className="fal fa-phone"></i>  +(880) 1733 145359
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="https://maps.app.goo.gl/2vxz2EW5t8NhXqgDA" target='_blank' referrerPolicy='no-referrer'>

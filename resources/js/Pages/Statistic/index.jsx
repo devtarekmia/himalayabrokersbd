@@ -6,28 +6,28 @@ import Drawer from '../Mobile/Drawer';
 import HeaderNews from '../News/HeaderNews';
 import HeroNews from '../News/HeroNews';
 import { Head } from '@inertiajs/react';
-import SaleProgramme from './SaleProgramme';
+import Statistics from './Statistics';
 
-function Schedule() {
+function Statistic() {
 
     const [drawer, drawerAction] = useToggle(false);
     return (
         <>
-            <Head title='Sale Programme' />
+            <Head title='Statistics' />
             <Drawer drawer={drawer} action={drawerAction.toggle} />
             <HeaderNews drawer={drawer} action={drawerAction.toggle} />
             <HeroNews
-                title="Sale Programme"
+                title="Statistics"
                 breadcrumb={[
                     { link: '/', title: 'Home' },
-                    { link: '/schedule', title: 'Sale Programme' },
+                    { link: '/statistics', title: 'Statistics' },
                 ]}
             />
-            <SaleProgramme />
+            <Statistics />
             <FooterHomeOne />
             <BackToTop />
         </>
     );
 }
 
-export default Schedule;
+export default Statistic;

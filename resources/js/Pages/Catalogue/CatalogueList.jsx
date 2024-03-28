@@ -1,9 +1,10 @@
-import { getSeason } from '@/utils';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
+import { formatRelative, parseISO } from 'date-fns';
+import { enIN } from 'date-fns/locale'
 import React from 'react';
 
 function CatalogueList() {
-    const season = getSeason();
+    const { catalogue, season } = usePage().props;
 
     return (
         <>
@@ -28,89 +29,56 @@ function CatalogueList() {
                         data-wow-duration="2000ms"
                         data-wow-delay="200ms"
                     >
-                        <table className='table table-bordered table-responsive'>
-                            <thead>
+                        <table className='table table-bordered table-responsive-lg text-nowrap'>
+                            <thead className='table-sm'>
                                 <tr>
-                                    <th>Sale No</th>
-                                    <th>Sale Date</th>
-                                    <th>Leaf</th>
-                                    <th>Dust</th>
-                                    <th>Catalogue</th>
+                                    <th rowSpan={2} className='align-middle'>Sale No</th>
+                                    <th rowSpan={2} className='align-middle col-1'>Sale Date</th>
+                                    <th rowSpan={2} className='align-middle'>Status</th>
+                                    <th colSpan={2}>Leaf</th>
+                                    <th colSpan={2}>Dust</th>
+                                    <th rowSpan={2} className='align-middle col-3'>Catalogue</th>
+                                </tr>
+                                <tr>
+                                    <th>Bags</th>
+                                    <th>KGs</th>
+                                    <th>Bags</th>
+                                    <th>KGs</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>03-03-2023</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>45632.00 KGs</td>
-                                    <td>
-                                        <Link href='/'>HBL-Tea Catalogue for Sale-3 Panchagarh.pdf</Link>
-                                    </td>
-                                </tr>
+                                {catalogue.map((schedule) => (
+                                    <React.Fragment key={schedule.id}>
+                                        {schedule.catalogue && (
+                                            <tr>
+                                                <td>{schedule.sale_no}</td>
+                                                <td>
+                                                    <div>{formatRelative(parseISO(schedule.sale_date), new Date(), { locale: enIN })}</div>
+                                                </td>
+                                                <td>
+                                                    <span className={`badge ${schedule.status == 'current' ? 'badge-success' : (schedule.status == 'closed' ? 'badge-secondary' : 'badge-info')} badge-pill text-capitalize`}>{schedule.status}</span>
+                                                </td>
+                                                <td >{schedule.catalogue.offering_bags_leaf}</td>
+                                                <td className='text-right'>{new Intl.NumberFormat('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(schedule.catalogue.offering_kgs_leaf)}</td>
+                                                <td>{schedule.catalogue.offering_bags_dust}</td>
+                                                <td className='text-right'>{new Intl.NumberFormat('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(schedule.catalogue.offering_kgs_dust)}</td>
+                                                <td><a href={schedule.catalogue.catalogue_file} download> <i className='fal fa-file-pdf mr-2' style={{ color: 'red' }}></i> {schedule.catalogue.catalogue_file_name}</a></td>
+                                            </tr>
+                                        )}
+                                        {!schedule.catalogue && (
+                                            <tr>
+                                                <td>{schedule.sale_no}</td>
+                                                <td>
+                                                    <div>{formatRelative(parseISO(schedule.sale_date), new Date(), { locale: enIN })}</div>
+                                                </td>
+                                                <td>
+                                                    <span className={`badge ${schedule.status == 'current' ? 'badge-success' : (schedule.status == 'closed' ? 'badge-secondary' : 'badge-info')} badge-pill text-capitalize`}>{schedule.status}</span>
+                                                </td>
+                                                <td colSpan={5} className='font-italic'>Upcoming Sale</td>
+                                            </tr>
+                                        )}
+                                    </React.Fragment>
+                                ))}
                             </tbody>
                         </table>
                     </div>

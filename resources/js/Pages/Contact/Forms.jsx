@@ -48,7 +48,7 @@ function Forms() {
                                         <i className="fal fa-phone"></i>
                                         +(880) 1710 035629
                                         <br />
-                                        +(880) 1721 570305
+                                        +(880) 1733 145359
                                     </p>
                                 </div>
                                 <div className="single-info">

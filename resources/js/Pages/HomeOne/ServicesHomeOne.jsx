@@ -2,10 +2,11 @@ import { FluentMdl2ProductList } from '@/Components/Icons/FluentMdl2ProductList'
 import { OuiAppReporting } from '@/Components/Icons/OuiAppReporting';
 import { StreamlineMoneyGraphAnalyticsBusinessProductGraphDataChartAnalysis } from '@/Components/Icons/StreamlineMoneyGraphAnalyticsBusinessProductGraphDataChartAnalysis';
 import { UimCalender } from '@/Components/Icons/UimCalender';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 import React from 'react';
 
 function ServicesHomeOne({ className }) {
+    const { season } = usePage().props.sale.data
     return (
         <section className={`appie-service-area pt-90 pb-100 ${className}`} id="service">
             <div className="container">
@@ -22,7 +23,7 @@ function ServicesHomeOne({ className }) {
                                     <UimCalender className="text-white" style={{ fontSize: '2.5rem' }} />
                                 </div>
                                 <h4 className="appie-title">Sale Programme</h4>
-                                <p>View the sale programme for season 2024/25.</p>
+                                <p>The sale programme for season {season}.</p>
                             </div>
                         </Link>
                     </div>
@@ -67,7 +68,7 @@ function ServicesHomeOne({ className }) {
                                     <OuiAppReporting className="text-white" style={{ fontSize: '2.5rem' }} />
                                 </div>
                                 <h4 className="appie-title">Statistics</h4>
-                                <p>Mucker plastered bugger all mate morish are.</p>
+                                <p>View monthly statistical reports.</p>
                             </div>
                         </Link>
                     </div>

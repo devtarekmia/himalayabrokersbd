@@ -1,9 +1,8 @@
-import { getSeason } from '@/utils';
-import { Link } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 import React from 'react';
 
-function TopPrices({ top_prices }) {
-    const season = getSeason();
+function TopPrices() {
+    const { top_prices, season } = usePage().props;
     return (
         <>
             <section className="contact-section">
@@ -35,7 +34,7 @@ function TopPrices({ top_prices }) {
                     >
 
 
-                        <table className='table table-bordered table-responsive'>
+                        <table className='table table-bordered table-responsive-md text-nowrap'>
                             <thead>
                                 <tr>
                                     <th>Sale No</th>
@@ -64,7 +63,7 @@ function TopPrices({ top_prices }) {
                                         {sale.top_prices.length === 0 && (
                                             <tr>
                                                 <td >{sale.sale_no}</td>
-                                                <td colSpan="4">Upcoming Sale</td>
+                                                <td colSpan="4" className='font-italic'>Upcoming Sale</td>
                                             </tr>
                                         )}
                                     </React.Fragment>

@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             FaqSeeder::class,
             AuctionScheduleSeeder::class,
             TopPriceSeeder::class,
+            TeaCatalogueSeeder::class,
         ]);
     }
 }

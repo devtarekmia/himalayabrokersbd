@@ -5,6 +5,7 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class AuctionSchedule extends Model
 {
@@ -54,5 +55,10 @@ class AuctionSchedule extends Model
             ->where('prompt_date', '>=', $currentDate)
             ->orderBy('sale_no', 'desc')
             ->first();
+    }
+
+    public function catalogue(): HasOne
+    {
+        return $this->hasOne(TeaCatalogue::class);
     }
 }
